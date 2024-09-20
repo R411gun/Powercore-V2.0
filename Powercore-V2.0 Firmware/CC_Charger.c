@@ -39,7 +39,7 @@ uint offset_clk, offset_timing;
 uint32_t default_clk_period         = 133;                                                      //3.216usec
 uint32_t default_limit_wait_time    = 185;                                                      //3.024usec
 uint32_t default_limit_on_time      = 7;                                                        //0.136usec
-uint32_t default_blanking_wait_time = 185;                                                      //0.112usec
+uint32_t default_blanking_wait_time = 170;                                                      //0.112usec
 uint32_t default_blanking_on_time   = 12;                                                       //3.032usec
 
 bool caps_charged = false;

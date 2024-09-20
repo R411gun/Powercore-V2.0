@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>D:\Users\Dhruv Goel\Documents\EDM Design\Git\Powercore-V2.0\Powercore-V2.0 Motherboard\KiCAD\POWERCORE-V2.0_MOTHERBOARD.kicad_sch</source>
-    <date>2/25/2024 13:52:59</date>
+    <date>9/19/2024 21:46:40</date>
     <tool>Eeschema 7.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -628,7 +628,13 @@
       <value>RP2040</value>
       <footprint>Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm</footprint>
       <datasheet>https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Raspberry Pi</field>
+        <field name="Part Number">SC0914(7)</field>
+      </fields>
       <libsource lib="MCU_RaspberryPi" part="RP2040" description="A microcontroller by Raspberry Pi"/>
+      <property name="Manufacturer" value="Raspberry Pi"/>
+      <property name="Part Number" value="SC0914(7)"/>
       <property name="Sheetname" value="MICRO"/>
       <property name="Sheetfile" value="MICRO.kicad_sch"/>
       <property name="ki_description" value="A microcontroller by Raspberry Pi"/>
@@ -1145,77 +1151,6 @@
       <property name="ki_description" value="IND, 330UH, 0.47A, SMD, 6 W X 6 L X 4.5MM H"/>
       <sheetpath names="/POWER/" tstamps="/b27e7b44-e012-4854-958f-f20bfe477dbb/"/>
       <tstamps>0eb36eec-b8da-468c-9312-7923ff973328</tstamps>
-    </comp>
-    <comp ref="L3">
-      <value>330n</value>
-      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
-      <datasheet>https://www.bourns.com/docs/product-datasheets/srp3212a.pdf</datasheet>
-      <fields>
-        <field name="DC Current Rating">8.5A</field>
-        <field name="DCR">13m</field>
-        <field name="Manufacturer">Bourns</field>
-        <field name="Part Number">SRP3212A-R33M</field>
-        <field name="Saturation Current">9.1A</field>
-      </fields>
-      <libsource lib="POWER_INDUCTORS" part="SRP3212A-R33M" description="IND, 330NH, 8.5A, SMD, 1210"/>
-      <property name="DC Current Rating" value="8.5A"/>
-      <property name="Saturation Current" value="9.1A"/>
-      <property name="DCR" value="13m"/>
-      <property name="Part Number" value="SRP3212A-R33M"/>
-      <property name="Manufacturer" value="Bourns"/>
-      <property name="Sheetname" value="POWER"/>
-      <property name="Sheetfile" value="POWER.kicad_sch"/>
-      <property name="ki_description" value="IND, 330NH, 8.5A, SMD, 1210"/>
-      <sheetpath names="/POWER/" tstamps="/b27e7b44-e012-4854-958f-f20bfe477dbb/"/>
-      <tstamps>f3de4d4e-04b3-45ef-ae88-ece04818b024</tstamps>
-    </comp>
-    <comp ref="R13">
-      <value>0R68</value>
-      <footprint>SMD_RESISTORS:CSRN2512</footprint>
-      <datasheet>https://www.seielect.com/catalog/sei-csr_csrn.pdf</datasheet>
-      <fields>
-        <field name="Manufacturer">Stackpole</field>
-        <field name="Package Size">2512</field>
-        <field name="Part Number">CSRN2512FKR680</field>
-        <field name="Power Rating">2W</field>
-        <field name="Tolerance">1%</field>
-      </fields>
-      <libsource lib="POWER_RESISTOR" part="0R68_2512_2W" description="RES, 0R68, 1%, 2W, 2512, SMD"/>
-      <property name="Package Size" value="2512"/>
-      <property name="Tolerance" value="1%"/>
-      <property name="Part Number" value="CSRN2512FKR680"/>
-      <property name="Power Rating" value="2W"/>
-      <property name="Manufacturer" value="Stackpole"/>
-      <property name="Sheetname" value="POWER"/>
-      <property name="Sheetfile" value="POWER.kicad_sch"/>
-      <property name="ki_description" value="RES, 0R68, 1%, 2W, 2512, SMD"/>
-      <property name="ki_keywords" value="resistor"/>
-      <sheetpath names="/POWER/" tstamps="/b27e7b44-e012-4854-958f-f20bfe477dbb/"/>
-      <tstamps>49371247-bf7e-41d3-b384-1a1df9da181a</tstamps>
-    </comp>
-    <comp ref="R17">
-      <value>0R68</value>
-      <footprint>SMD_RESISTORS:CSRN2512</footprint>
-      <datasheet>https://www.seielect.com/catalog/sei-csr_csrn.pdf</datasheet>
-      <fields>
-        <field name="Manufacturer">Stackpole</field>
-        <field name="Package Size">2512</field>
-        <field name="Part Number">CSRN2512FKR680</field>
-        <field name="Power Rating">2W</field>
-        <field name="Tolerance">1%</field>
-      </fields>
-      <libsource lib="POWER_RESISTOR" part="0R68_2512_2W" description="RES, 0R68, 1%, 2W, 2512, SMD"/>
-      <property name="Package Size" value="2512"/>
-      <property name="Tolerance" value="1%"/>
-      <property name="Part Number" value="CSRN2512FKR680"/>
-      <property name="Power Rating" value="2W"/>
-      <property name="Manufacturer" value="Stackpole"/>
-      <property name="Sheetname" value="POWER"/>
-      <property name="Sheetfile" value="POWER.kicad_sch"/>
-      <property name="ki_description" value="RES, 0R68, 1%, 2W, 2512, SMD"/>
-      <property name="ki_keywords" value="resistor"/>
-      <sheetpath names="/POWER/" tstamps="/b27e7b44-e012-4854-958f-f20bfe477dbb/"/>
-      <tstamps>1e071c37-5e06-4f92-a010-b05360b9535f</tstamps>
     </comp>
     <comp ref="R37">
       <value>100K</value>
@@ -2346,6 +2281,25 @@
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
       <tstamps>42077ff7-07fe-42b5-97bb-6b02578fbf20</tstamps>
     </comp>
+    <comp ref="C28">
+      <value>0.1U</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNWC_Spec.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Part Number">CL10B104KB8NNWC</field>
+        <field name="Volage Rating">50V</field>
+      </fields>
+      <libsource lib="0603_CAP" part="0.1U_50V" description="CAP, 0.1U, 50V, X7R, SMT, 0603"/>
+      <property name="Volage Rating" value="50V"/>
+      <property name="Part Number" value="CL10B104KB8NNWC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
+      <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
+      <property name="ki_description" value="CAP, 0.1U, 50V, X7R, SMT, 0603"/>
+      <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
+      <tstamps>47b451af-2f65-4f3d-8864-440d3f1c750f</tstamps>
+    </comp>
     <comp ref="C30">
       <value>1U</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
@@ -2364,6 +2318,44 @@
       <property name="ki_description" value="CAP, 1U, 25V, X7R, SMT, 0603"/>
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
       <tstamps>dd7bc2b9-6bfe-4f79-8aff-d69057d06fae</tstamps>
+    </comp>
+    <comp ref="C33">
+      <value>27p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Part Number">CC0603JRNPO9BN270</field>
+        <field name="Volage Rating">50V</field>
+      </fields>
+      <libsource lib="0603_CAP" part="27P_50V" description="CAP, 27P, 50V, C0G, SMT, 0603"/>
+      <property name="Volage Rating" value="50V"/>
+      <property name="Part Number" value="CC0603JRNPO9BN270"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
+      <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
+      <property name="ki_description" value="CAP, 27P, 50V, C0G, SMT, 0603"/>
+      <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
+      <tstamps>64fef7b1-d687-401a-a8e5-c1aeba929c43</tstamps>
+    </comp>
+    <comp ref="C43">
+      <value>27p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Part Number">CC0603JRNPO9BN270</field>
+        <field name="Volage Rating">50V</field>
+      </fields>
+      <libsource lib="0603_CAP" part="27P_50V" description="CAP, 27P, 50V, C0G, SMT, 0603"/>
+      <property name="Volage Rating" value="50V"/>
+      <property name="Part Number" value="CC0603JRNPO9BN270"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
+      <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
+      <property name="ki_description" value="CAP, 27P, 50V, C0G, SMT, 0603"/>
+      <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
+      <tstamps>54aa8fc9-1199-4664-b1fa-a23e4a658e48</tstamps>
     </comp>
     <comp ref="C45">
       <value>0.01U</value>
@@ -2613,27 +2605,6 @@
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
       <tstamps>67022805-721a-4537-b8fb-9d708fd1c703</tstamps>
     </comp>
-    <comp ref="D1">
-      <value>V2PM10L-M3/H</value>
-      <footprint>DIODES:DO-220AA (SMP)</footprint>
-      <datasheet>https://www.vishay.com/docs/87463/v2pm10l.pdf</datasheet>
-      <fields>
-        <field name="Current">1.9A</field>
-        <field name="Manufacturer">VISHAY</field>
-        <field name="Part Number">V2PM10L-M3/H</field>
-        <field name="Voltage">100V</field>
-      </fields>
-      <libsource lib="SCHOTTKY_DIODES" part="V2PM10L-M3/H" description="DIODE, SCHOTTKY, 100V, 1.9A, DO-220AA"/>
-      <property name="Manufacturer" value="VISHAY"/>
-      <property name="Part Number" value="V2PM10L-M3/H"/>
-      <property name="Voltage" value="100V"/>
-      <property name="Current" value="1.9A"/>
-      <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
-      <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
-      <property name="ki_description" value="DIODE, SCHOTTKY, 100V, 1.9A, DO-220AA"/>
-      <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
-      <tstamps>e22c7a4a-6f39-41c1-9855-c7fa0d793dd0</tstamps>
-    </comp>
     <comp ref="D3">
       <value>V2PM10L-M3/H</value>
       <footprint>DIODES:DO-220AA (SMP)</footprint>
@@ -2743,32 +2714,32 @@
       <tstamps>f833aad1-f6b8-4a87-a0aa-fff48aaf9066</tstamps>
     </comp>
     <comp ref="Q3">
-      <value>ISZ230N10NM6ATMA1</value>
+      <value>BSZ300N15NS5ATMA1</value>
       <footprint>DFN_QFN:INFINEON_TSDSON-8-25</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-ISZ230N10NM6-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c7bb971ed017bba7c28d202ac</datasheet>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-BSZ300N15NS5-DS-v02_01-EN.pdf?fileId=5546d462617643590161992b1642177e</datasheet>
       <fields>
         <field name="Manufacturer">INFINEON</field>
-        <field name="Part Number">ISZ230N10NM6ATMA1</field>
+        <field name="Part Number">BSZ300N15NS5ATMA1</field>
       </fields>
-      <libsource lib="POWER_FETs" part="ISZ230N10NM6ATMA1" description=""/>
+      <libsource lib="POWER_FETs" part="BSZ300N15NS5ATMA1" description=""/>
       <property name="Manufacturer" value="INFINEON"/>
-      <property name="Part Number" value="ISZ230N10NM6ATMA1"/>
+      <property name="Part Number" value="BSZ300N15NS5ATMA1"/>
       <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
       <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
       <tstamps>d3e94ade-2d85-4145-a534-79714ea0e29c</tstamps>
     </comp>
     <comp ref="Q4">
-      <value>ISZ230N10NM6ATMA1</value>
+      <value>BSZ300N15NS5ATMA1</value>
       <footprint>DFN_QFN:INFINEON_TSDSON-8-25</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-ISZ230N10NM6-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c7bb971ed017bba7c28d202ac</datasheet>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-BSZ300N15NS5-DS-v02_01-EN.pdf?fileId=5546d462617643590161992b1642177e</datasheet>
       <fields>
         <field name="Manufacturer">INFINEON</field>
-        <field name="Part Number">ISZ230N10NM6ATMA1</field>
+        <field name="Part Number">BSZ300N15NS5ATMA1</field>
       </fields>
-      <libsource lib="POWER_FETs" part="ISZ230N10NM6ATMA1" description=""/>
+      <libsource lib="POWER_FETs" part="BSZ300N15NS5ATMA1" description=""/>
       <property name="Manufacturer" value="INFINEON"/>
-      <property name="Part Number" value="ISZ230N10NM6ATMA1"/>
+      <property name="Part Number" value="BSZ300N15NS5ATMA1"/>
       <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
       <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
@@ -3007,23 +2978,23 @@
       <tstamps>8d1f9b52-ce41-41fe-b78b-077940fa80c6</tstamps>
     </comp>
     <comp ref="R55">
-      <value>3R3</value>
+      <value>1R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
       <fields>
         <field name="Manufacturer">Stackpole</field>
         <field name="Package Size">0603</field>
-        <field name="Part Number">RMCF0603FT3R30</field>
+        <field name="Part Number">RMCF0603FT1R00</field>
         <field name="Tolerance">1%</field>
       </fields>
-      <libsource lib="0603_RES" part="3R3" description="RES, 3R3, 1%, 0.1W, 0603, SMD"/>
+      <libsource lib="0603_RES" part="1R" description="RES, 1R, 1%, 0.1W, 0603, SMD"/>
       <property name="Package Size" value="0603"/>
       <property name="Tolerance" value="1%"/>
-      <property name="Part Number" value="RMCF0603FT3R30"/>
+      <property name="Part Number" value="RMCF0603FT1R00"/>
       <property name="Manufacturer" value="Stackpole"/>
       <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
       <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
-      <property name="ki_description" value="RES, 3R3, 1%, 0.1W, 0603, SMD"/>
+      <property name="ki_description" value="RES, 1R, 1%, 0.1W, 0603, SMD"/>
       <property name="ki_keywords" value="resistor, 100"/>
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
       <tstamps>e6f06707-b8f9-4a75-9bce-068b9a93f3fa</tstamps>
@@ -3268,21 +3239,21 @@
       <tstamps>b554e4a8-12bd-4f9e-ad71-e15c3bfd8764</tstamps>
     </comp>
     <comp ref="U8">
-      <value>LM5106MMX/NOPB</value>
-      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/lm5106.pdf</datasheet>
+      <value>HIP2210FRTZ-T</value>
+      <footprint>TDFN:TDFN-10_EP_2.6x3.0mm_P0.8mm</footprint>
+      <datasheet>https://www.renesas.com/en/document/dst/hip2210-hip2211-datasheet?r=1320376</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="Part Number">LM5106MMX/NOPB</field>
+        <field name="Manufacturer">Renesas</field>
+        <field name="Part Number">HIP2210FRTZ-T</field>
       </fields>
-      <libsource lib="Gate Drivers" part="LM5106MMX/NOPB" description="IC, DRIVER, HALF BRIDGE, 100V, 1.2A"/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="Part Number" value="LM5106MMX/NOPB"/>
+      <libsource lib="Gate Drivers" part="HIP2210FRTZ-T" description="IC, DRIVER, HALF BRIDGE, 100V, 3A"/>
+      <property name="Manufacturer" value="Renesas"/>
+      <property name="Part Number" value="HIP2210FRTZ-T"/>
       <property name="Sheetname" value="CHARGER_POWER_STAGE"/>
       <property name="Sheetfile" value="CHARGER_POWER_STAGE.kicad_sch"/>
-      <property name="ki_description" value="IC, DRIVER, HALF BRIDGE, 100V, 1.2A"/>
+      <property name="ki_description" value="IC, DRIVER, HALF BRIDGE, 100V, 3A"/>
       <sheetpath names="/CHARGER_POWER_STAGE/" tstamps="/ea1081f5-c3c3-413f-8b88-dc41828804b0/"/>
-      <tstamps>c924d7a0-c90f-4a8d-b2ad-754a76f151f6</tstamps>
+      <tstamps>08a9a19b-2b04-48ff-9e15-b15a33d814e6</tstamps>
     </comp>
     <comp ref="U14">
       <value>IRS10752LTRPBF</value>
@@ -3660,28 +3631,6 @@
       <property name="ki_keywords" value="resistor, 10k"/>
       <sheetpath names="/MONITORING/" tstamps="/299f7a06-bdb8-4c3b-9ee6-50f605303c57/"/>
       <tstamps>7a90ea9e-9bf2-452d-8702-b6dafe23db95</tstamps>
-    </comp>
-    <comp ref="R80">
-      <value>10K0</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
-      <fields>
-        <field name="Manufacturer">Stackpole</field>
-        <field name="Package Size">0603</field>
-        <field name="Part Number">RMCF0603FT10K0</field>
-        <field name="Tolerance">1%</field>
-      </fields>
-      <libsource lib="0603_RES" part="10K0" description="RES, 10K0, 1%, 0.1W, 0603, SMD"/>
-      <property name="Package Size" value="0603"/>
-      <property name="Tolerance" value="1%"/>
-      <property name="Part Number" value="RMCF0603FT10K0"/>
-      <property name="Manufacturer" value="Stackpole"/>
-      <property name="Sheetname" value="MONITORING"/>
-      <property name="Sheetfile" value="MONITORING.kicad_sch"/>
-      <property name="ki_description" value="RES, 10K0, 1%, 0.1W, 0603, SMD"/>
-      <property name="ki_keywords" value="resistor, 10k"/>
-      <sheetpath names="/MONITORING/" tstamps="/299f7a06-bdb8-4c3b-9ee6-50f605303c57/"/>
-      <tstamps>a19f9c0f-3095-427a-8a9e-53fd1e089469</tstamps>
     </comp>
     <comp ref="R82">
       <value>10K0</value>
@@ -4869,6 +4818,24 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="0603_RES" part="1R">
+      <description>RES, 1R, 1%, 0.1W, 0603, SMD</description>
+      <docs>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">1R</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</field>
+        <field name="Package Size">0603</field>
+        <field name="Tolerance">1%</field>
+        <field name="Part Number">RMCF0603FT1R00</field>
+        <field name="Manufacturer">Stackpole</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="0603_RES" part="20K0">
       <description>RES, 20K0, 1%, 0.1W, 0603, SMD</description>
       <docs>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</docs>
@@ -4898,24 +4865,6 @@
         <field name="Package Size">0603</field>
         <field name="Tolerance">1%</field>
         <field name="Part Number">RMCF0603FT27R0</field>
-        <field name="Manufacturer">Stackpole</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="0603_RES" part="3R3">
-      <description>RES, 3R3, 1%, 0.1W, 0603, SMD</description>
-      <docs>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">3R3</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</field>
-        <field name="Package Size">0603</field>
-        <field name="Tolerance">1%</field>
-        <field name="Part Number">RMCF0603FT3R30</field>
         <field name="Manufacturer">Stackpole</field>
       </fields>
       <pins>
@@ -5349,6 +5298,31 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Gate Drivers" part="HIP2210FRTZ-T">
+      <description>IC, DRIVER, HALF BRIDGE, 100V, 3A</description>
+      <docs>https://www.renesas.com/en/document/dst/hip2210-hip2211-datasheet?r=1320376</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HIP2210FRTZ-T</field>
+        <field name="Footprint">TDFN:TDFN-10_EP_2.6x3.0mm_P0.8mm</field>
+        <field name="Datasheet">https://www.renesas.com/en/document/dst/hip2210-hip2211-datasheet?r=1320376</field>
+        <field name="Manufacturer">Renesas</field>
+        <field name="Part Number">HIP2210FRTZ-T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="HB" type="power_in"/>
+        <pin num="3" name="HO" type="output"/>
+        <pin num="4" name="HS" type="input"/>
+        <pin num="5" name="VREF" type="passive"/>
+        <pin num="6" name="RDT" type="passive"/>
+        <pin num="7" name="EN" type="input"/>
+        <pin num="8" name="IN" type="input"/>
+        <pin num="9" name="VSS" type="power_in"/>
+        <pin num="10" name="LO" type="output"/>
+        <pin num="EP" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Gate Drivers" part="IRS10752LTRPBF">
       <docs>https://www.infineon.com/dgdl/irs10752lpbf.pdf?fileId=5546d462533600a40153567308ca276d</docs>
       <fields>
@@ -5366,30 +5340,6 @@
         <pin num="4" name="VS" type="passive"/>
         <pin num="5" name="HO" type="output"/>
         <pin num="6" name="VB" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="Gate Drivers" part="LM5106MMX/NOPB">
-      <description>IC, DRIVER, HALF BRIDGE, 100V, 1.2A</description>
-      <docs>https://www.ti.com/lit/ds/symlink/lm5106.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM5106MMX/NOPB</field>
-        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm5106.pdf</field>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="Part Number">LM5106MMX/NOPB</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VDD" type="power_in"/>
-        <pin num="2" name="HB" type="power_in"/>
-        <pin num="3" name="HO" type="output"/>
-        <pin num="4" name="HS" type="input"/>
-        <pin num="5" name="NC" type="output"/>
-        <pin num="6" name="RDT" type="passive"/>
-        <pin num="7" name="EN" type="input"/>
-        <pin num="8" name="IN" type="input"/>
-        <pin num="9" name="VSS" type="power_in"/>
-        <pin num="10" name="LO" type="output"/>
       </pins>
     </libpart>
     <libpart lib="LINEAR_REGULATORS" part="UA78M05CDCYR">
@@ -5553,15 +5503,15 @@
         <pin num="8" name="V+" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="POWER_FETs" part="ISZ230N10NM6ATMA1">
-      <docs>https://www.infineon.com/dgdl/Infineon-ISZ230N10NM6-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c7bb971ed017bba7c28d202ac</docs>
+    <libpart lib="POWER_FETs" part="BSZ300N15NS5ATMA1">
+      <docs>https://www.infineon.com/dgdl/Infineon-BSZ300N15NS5-DS-v02_01-EN.pdf?fileId=5546d462617643590161992b1642177e</docs>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">ISZ230N10NM6ATMA1</field>
+        <field name="Value">BSZ300N15NS5ATMA1</field>
         <field name="Footprint">DFN_QFN:INFINEON_TSDSON-8-25</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-ISZ230N10NM6-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c7bb971ed017bba7c28d202ac</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-BSZ300N15NS5-DS-v02_01-EN.pdf?fileId=5546d462617643590161992b1642177e</field>
         <field name="Manufacturer">INFINEON</field>
-        <field name="Part Number">ISZ230N10NM6ATMA1</field>
+        <field name="Part Number">BSZ300N15NS5ATMA1</field>
       </fields>
       <pins>
         <pin num="1" name="S" type="passive"/>
@@ -5604,25 +5554,6 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="POWER_INDUCTORS" part="SRP3212A-R33M">
-      <description>IND, 330NH, 8.5A, SMD, 1210</description>
-      <docs>https://www.bourns.com/docs/product-datasheets/srp3212a.pdf</docs>
-      <fields>
-        <field name="Reference">L</field>
-        <field name="Value">330n</field>
-        <field name="Footprint">Inductor_SMD:L_1210_3225Metric</field>
-        <field name="Datasheet">https://www.bourns.com/docs/product-datasheets/srp3212a.pdf</field>
-        <field name="DC Current Rating">8.5A</field>
-        <field name="Saturation Current">9.1A</field>
-        <field name="DCR">13m</field>
-        <field name="Part Number">SRP3212A-R33M</field>
-        <field name="Manufacturer">Bourns</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="POWER_INDUCTORS" part="VLS6045EX-331M">
       <description>IND, 330UH, 0.47A, SMD, 6 W X 6 L X 4.5MM H</description>
       <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls6045ex_en.pdf</docs>
@@ -5655,25 +5586,6 @@
         <field name="Part Number">CRE2512-FZ-R006E-3</field>
         <field name="Power Rating">3W</field>
         <field name="Manufacturer">Bourns</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="POWER_RESISTOR" part="0R68_2512_2W">
-      <description>RES, 0R68, 1%, 2W, 2512, SMD</description>
-      <docs>https://www.seielect.com/catalog/sei-csr_csrn.pdf</docs>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">0R68</field>
-        <field name="Footprint">SMD_RESISTORS:CSRN2512</field>
-        <field name="Datasheet">https://www.seielect.com/catalog/sei-csr_csrn.pdf</field>
-        <field name="Package Size">2512</field>
-        <field name="Tolerance">1%</field>
-        <field name="Part Number">CSRN2512FKR680</field>
-        <field name="Power Rating">2W</field>
-        <field name="Manufacturer">Stackpole</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -5922,6 +5834,7 @@
     <net code="2" name="+3V3">
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C42" pin="1" pintype="passive"/>
@@ -5964,6 +5877,7 @@
       <node ref="U5" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U6" pin="8" pinfunction="V+" pintype="power_in"/>
       <node ref="U7" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U8" pin="5" pinfunction="VREF" pintype="passive"/>
     </net>
     <net code="3" name="+5V">
       <node ref="C1" pin="1" pintype="passive"/>
@@ -5991,7 +5905,6 @@
       <node ref="C65" pin="1" pintype="passive"/>
       <node ref="C83" pin="1" pintype="passive"/>
       <node ref="C86" pin="1" pintype="passive"/>
-      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="L1" pin="2" pintype="passive"/>
@@ -6278,10 +6191,12 @@
       <node ref="C25" pin="2" pintype="passive"/>
       <node ref="C26" pin="2" pintype="passive"/>
       <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
       <node ref="C29" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C33" pin="2" pintype="passive"/>
       <node ref="C34" pin="2" pintype="passive"/>
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C36" pin="2" pintype="passive"/>
@@ -6290,14 +6205,17 @@
       <node ref="C40" pin="2" pintype="passive"/>
       <node ref="C41" pin="1" pintype="passive"/>
       <node ref="C42" pin="2" pintype="passive"/>
+      <node ref="C43" pin="2" pintype="passive"/>
       <node ref="C44" pin="2" pintype="passive"/>
       <node ref="C47" pin="2" pintype="passive"/>
       <node ref="C48" pin="2" pintype="passive"/>
       <node ref="C49" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C50" pin="2" pintype="passive"/>
+      <node ref="C51" pin="2" pintype="passive"/>
       <node ref="C52" pin="2" pintype="passive"/>
       <node ref="C53" pin="2" pintype="passive"/>
+      <node ref="C54" pin="2" pintype="passive"/>
       <node ref="C55" pin="2" pintype="passive"/>
       <node ref="C56" pin="2" pintype="passive"/>
       <node ref="C57" pin="2" pintype="passive"/>
@@ -6351,9 +6269,7 @@
       <node ref="Q3" pin="1" pinfunction="S" pintype="passive"/>
       <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
-      <node ref="R13" pin="2" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R26" pin="1" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
       <node ref="R34" pin="2" pintype="passive"/>
@@ -6403,6 +6319,7 @@
       <node ref="U7" pin="4" pinfunction="V-" pintype="power_in"/>
       <node ref="U7" pin="9" pinfunction="V-" pintype="power_in"/>
       <node ref="U8" pin="9" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U8" pin="EP" pinfunction="VSS" pintype="power_in"/>
       <node ref="U9" pin="1" pinfunction="GND" pintype="passive"/>
       <node ref="U9" pin="EP" pinfunction="EP" pintype="passive"/>
     </net>
@@ -6416,307 +6333,298 @@
       <node ref="R101" pin="1" pintype="passive"/>
       <node ref="Y1" pin="1" pintype="passive"/>
     </net>
-    <net code="56" name="Net-(C51-Pad2)">
-      <node ref="C51" pin="2" pintype="passive"/>
-      <node ref="C54" pin="2" pintype="passive"/>
-      <node ref="R13" pin="1" pintype="passive"/>
-      <node ref="R17" pin="1" pintype="passive"/>
-    </net>
-    <net code="57" name="Net-(C84-Pad1)">
+    <net code="56" name="Net-(C84-Pad1)">
       <node ref="C84" pin="1" pintype="passive"/>
       <node ref="R70" pin="2" pintype="passive"/>
     </net>
-    <net code="58" name="Net-(C85-Pad2)">
+    <net code="57" name="Net-(C85-Pad2)">
       <node ref="C85" pin="2" pintype="passive"/>
       <node ref="R54" pin="1" pintype="passive"/>
     </net>
-    <net code="59" name="Net-(D1-K)">
-      <node ref="C45" pin="1" pintype="passive"/>
-      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="U8" pin="2" pinfunction="HB" pintype="power_in"/>
-    </net>
-    <net code="60" name="Net-(D3-K)">
+    <net code="58" name="Net-(D3-K)">
       <node ref="C63" pin="1" pintype="passive"/>
       <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R90" pin="1" pintype="passive"/>
     </net>
-    <net code="61" name="Net-(D5-A)">
+    <net code="59" name="Net-(D5-A)">
       <node ref="C63" pin="2" pintype="passive"/>
       <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="Q10" pin="4" pinfunction="S" pintype="passive"/>
     </net>
-    <net code="62" name="Net-(D5-K)">
+    <net code="60" name="Net-(D5-K)">
       <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="Q10" pin="5" pinfunction="G" pintype="passive"/>
       <node ref="Q10" pin="6" pinfunction="D" pintype="passive"/>
       <node ref="R90" pin="2" pintype="passive"/>
     </net>
-    <net code="63" name="Net-(D7-A)">
+    <net code="61" name="Net-(D7-A)">
       <node ref="D7" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="Q12" pin="2" pinfunction="B1" pintype="input"/>
       <node ref="R73" pin="2" pintype="passive"/>
     </net>
-    <net code="64" name="Net-(D7-A{slash}K)">
+    <net code="62" name="Net-(D7-A{slash}K)">
       <node ref="D7" pin="3" pinfunction="A/K" pintype="passive"/>
       <node ref="R62" pin="2" pintype="passive"/>
     </net>
-    <net code="65" name="Net-(D7-K)">
+    <net code="63" name="Net-(D7-K)">
       <node ref="D7" pin="2" pinfunction="K" pintype="passive"/>
       <node ref="Q12" pin="5" pinfunction="B2" pintype="input"/>
       <node ref="R72" pin="1" pintype="passive"/>
     </net>
-    <net code="66" name="Net-(D19-K)">
+    <net code="64" name="Net-(D19-K)">
       <node ref="C32" pin="1" pintype="passive"/>
       <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="U10" pin="1" pinfunction="IN" pintype="power_in"/>
     </net>
-    <net code="67" name="Net-(J5-Pad1)">
+    <net code="65" name="Net-(J5-Pad1)">
       <node ref="J5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
     </net>
-    <net code="68" name="Net-(J6-CC1)">
+    <net code="66" name="Net-(J6-CC1)">
       <node ref="J6" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
       <node ref="R69" pin="1" pintype="passive"/>
     </net>
-    <net code="69" name="Net-(J6-CC2)">
+    <net code="67" name="Net-(J6-CC2)">
       <node ref="J6" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
       <node ref="R71" pin="1" pintype="passive"/>
     </net>
-    <net code="70" name="Net-(J6-VBUS-PadA4)">
+    <net code="68" name="Net-(J6-VBUS-PadA4)">
       <node ref="J6" pin="A4" pinfunction="VBUS" pintype="passive"/>
       <node ref="J6" pin="A9" pinfunction="VBUS" pintype="passive"/>
       <node ref="J6" pin="B4" pinfunction="VBUS" pintype="passive"/>
       <node ref="J6" pin="B9" pinfunction="VBUS" pintype="passive"/>
     </net>
-    <net code="71" name="Net-(L2-Pad1)">
+    <net code="69" name="Net-(L2-Pad1)">
       <node ref="L2" pin="1" pintype="passive"/>
       <node ref="R24" pin="1" pintype="passive"/>
     </net>
-    <net code="72" name="Net-(Q1-G)">
+    <net code="70" name="Net-(Q1-G)">
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q11" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R65" pin="2" pintype="passive"/>
     </net>
-    <net code="73" name="Net-(Q2-D)">
+    <net code="71" name="Net-(Q2-D)">
       <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R19" pin="2" pintype="passive"/>
     </net>
-    <net code="74" name="Net-(Q2-G)">
+    <net code="72" name="Net-(Q2-G)">
       <node ref="Q2" pin="1" pinfunction="G" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
     </net>
-    <net code="75" name="Net-(Q2-S)">
+    <net code="73" name="Net-(Q2-S)">
       <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="R36" pin="1" pintype="passive"/>
       <node ref="U6" pin="6" pinfunction="-" pintype="input"/>
     </net>
-    <net code="76" name="Net-(Q3-G)">
+    <net code="74" name="Net-(Q3-G)">
       <node ref="C80" pin="1" pintype="passive"/>
       <node ref="Q3" pin="4" pinfunction="G" pintype="passive"/>
       <node ref="R55" pin="2" pintype="passive"/>
       <node ref="R88" pin="1" pintype="passive"/>
     </net>
-    <net code="77" name="Net-(Q5-G)">
+    <net code="75" name="Net-(Q5-G)">
       <node ref="Q5" pin="1" pinfunction="G" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
       <node ref="R77" pin="2" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="78" name="Net-(Q5-S)">
+    <net code="76" name="Net-(Q5-S)">
       <node ref="Q5" pin="3" pinfunction="S" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
       <node ref="R29" pin="1" pintype="passive"/>
       <node ref="U16" pin="4" pinfunction="VS" pintype="passive"/>
     </net>
-    <net code="79" name="Net-(Q7-D)">
+    <net code="77" name="Net-(Q7-D)">
       <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R53" pin="2" pintype="passive"/>
       <node ref="R82" pin="2" pintype="passive"/>
     </net>
-    <net code="80" name="Net-(Q7-G)">
+    <net code="78" name="Net-(Q7-G)">
       <node ref="Q7" pin="1" pinfunction="G" pintype="passive"/>
-      <node ref="R80" pin="1" pintype="passive"/>
+      <node ref="R78" pin="2" pintype="passive"/>
+      <node ref="R79" pin="1" pintype="passive"/>
     </net>
-    <net code="81" name="Net-(Q9-G)">
+    <net code="79" name="Net-(Q9-G)">
       <node ref="Q9" pin="1" pinfunction="G" pintype="passive"/>
       <node ref="R25" pin="1" pintype="passive"/>
       <node ref="R89" pin="1" pintype="passive"/>
     </net>
-    <net code="82" name="Net-(Q10A-G)">
+    <net code="80" name="Net-(Q10A-G)">
       <node ref="Q10" pin="2" pinfunction="G" pintype="passive"/>
       <node ref="R96" pin="2" pintype="passive"/>
       <node ref="R97" pin="2" pintype="passive"/>
     </net>
-    <net code="83" name="Net-(Q11-G)">
+    <net code="81" name="Net-(Q11-G)">
       <node ref="Q11" pin="1" pinfunction="G" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="84" name="Net-(R15-Pad2)">
+    <net code="82" name="Net-(R15-Pad2)">
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="U7" pin="1" pintype="output"/>
     </net>
-    <net code="85" name="Net-(R33-Pad1)">
+    <net code="83" name="Net-(R33-Pad1)">
       <node ref="R33" pin="1" pintype="passive"/>
       <node ref="U6" pin="7" pintype="output"/>
     </net>
-    <net code="86" name="Net-(R38-Pad2)">
+    <net code="84" name="Net-(R38-Pad2)">
       <node ref="R38" pin="2" pintype="passive"/>
       <node ref="R39" pin="1" pintype="passive"/>
     </net>
-    <net code="87" name="Net-(R49-Pad2)">
+    <net code="85" name="Net-(R49-Pad2)">
       <node ref="R49" pin="2" pintype="passive"/>
       <node ref="U4" pin="1" pintype="input"/>
     </net>
-    <net code="88" name="Net-(R62-Pad1)">
+    <net code="86" name="Net-(R62-Pad1)">
       <node ref="R62" pin="1" pintype="passive"/>
       <node ref="U15" pin="7" pintype="output"/>
     </net>
-    <net code="89" name="Net-(R78-Pad2)">
-      <node ref="R78" pin="2" pintype="passive"/>
-      <node ref="R79" pin="1" pintype="passive"/>
-      <node ref="R80" pin="2" pintype="passive"/>
-    </net>
-    <net code="90" name="Net-(R100-Pad2)">
+    <net code="87" name="Net-(R100-Pad2)">
       <node ref="R100" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="91" name="Net-(U3-C)">
+    <net code="88" name="Net-(U3-C)">
       <node ref="R45" pin="2" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="C" pintype="input"/>
     </net>
-    <net code="92" name="Net-(U3-D)">
+    <net code="89" name="Net-(U3-D)">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U3" pin="3" pinfunction="D" pintype="input"/>
     </net>
-    <net code="93" name="Net-(U3-~{CLR})">
+    <net code="90" name="Net-(U3-~{CLR})">
       <node ref="U3" pin="6" pinfunction="~{CLR}" pintype="input"/>
       <node ref="U4" pin="4" pintype="output"/>
     </net>
-    <net code="94" name="Net-(U4-Pad2)">
+    <net code="91" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2" pintype="input"/>
       <node ref="U5" pin="4" pintype="output"/>
     </net>
-    <net code="95" name="Net-(U6B-+)">
+    <net code="92" name="Net-(U6B-+)">
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="R32" pin="2" pintype="passive"/>
       <node ref="R34" pin="1" pintype="passive"/>
       <node ref="U6" pin="5" pinfunction="+" pintype="input"/>
     </net>
-    <net code="96" name="Net-(U7A--)">
+    <net code="93" name="Net-(U7A--)">
       <node ref="C52" pin="1" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="U7" pin="2" pinfunction="-" pintype="input"/>
     </net>
-    <net code="97" name="Net-(U8-EN)">
+    <net code="94" name="Net-(U8-EN)">
+      <node ref="C43" pin="1" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
       <node ref="U8" pin="7" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="98" name="Net-(U8-HO)">
+    <net code="95" name="Net-(U8-HB)">
+      <node ref="C45" pin="1" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="HB" pintype="power_in"/>
+    </net>
+    <net code="96" name="Net-(U8-HO)">
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="U8" pin="3" pinfunction="HO" pintype="output"/>
     </net>
-    <net code="99" name="Net-(U8-IN)">
+    <net code="97" name="Net-(U8-IN)">
+      <node ref="C33" pin="1" pintype="passive"/>
       <node ref="R22" pin="2" pintype="passive"/>
       <node ref="U8" pin="8" pinfunction="IN" pintype="input"/>
     </net>
-    <net code="100" name="Net-(U8-LO)">
+    <net code="98" name="Net-(U8-LO)">
       <node ref="R55" pin="1" pintype="passive"/>
       <node ref="U8" pin="10" pinfunction="LO" pintype="output"/>
     </net>
-    <net code="101" name="Net-(U8-RDT)">
+    <net code="99" name="Net-(U8-RDT)">
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U8" pin="6" pinfunction="RDT" pintype="passive"/>
     </net>
-    <net code="102" name="Net-(U9-BST)">
+    <net code="100" name="Net-(U9-BST)">
       <node ref="C31" pin="1" pintype="passive"/>
       <node ref="U9" pin="7" pinfunction="BST" pintype="passive"/>
     </net>
-    <net code="103" name="Net-(U9-FB)">
+    <net code="101" name="Net-(U9-FB)">
       <node ref="C39" pin="1" pintype="passive"/>
       <node ref="R37" pin="2" pintype="passive"/>
       <node ref="R38" pin="1" pintype="passive"/>
       <node ref="U9" pin="5" pinfunction="FB" pintype="input"/>
     </net>
-    <net code="104" name="Net-(U9-RT)">
+    <net code="102" name="Net-(U9-RT)">
       <node ref="R41" pin="1" pintype="passive"/>
       <node ref="U9" pin="4" pinfunction="RT" pintype="passive"/>
     </net>
-    <net code="105" name="Net-(U9-SW)">
+    <net code="103" name="Net-(U9-SW)">
       <node ref="C31" pin="2" pintype="passive"/>
       <node ref="L1" pin="1" pintype="passive"/>
       <node ref="R40" pin="1" pintype="passive"/>
       <node ref="U9" pin="8" pinfunction="SW" pintype="passive"/>
     </net>
-    <net code="106" name="Net-(U11-CLK)">
+    <net code="104" name="Net-(U11-CLK)">
       <node ref="U11" pin="6" pinfunction="CLK" pintype="input"/>
       <node ref="U2" pin="52" pinfunction="QSPI_SCLK" pintype="output"/>
     </net>
-    <net code="107" name="Net-(U11-DI(IO0))">
+    <net code="105" name="Net-(U11-DI(IO0))">
       <node ref="U11" pin="5" pinfunction="DI(IO0)" pintype="bidirectional"/>
       <node ref="U2" pin="53" pinfunction="QSPI_SD0" pintype="bidirectional"/>
     </net>
-    <net code="108" name="Net-(U11-DO(IO1))">
+    <net code="106" name="Net-(U11-DO(IO1))">
       <node ref="U11" pin="2" pinfunction="DO(IO1)" pintype="bidirectional"/>
       <node ref="U2" pin="55" pinfunction="QSPI_SD1" pintype="bidirectional"/>
     </net>
-    <net code="109" name="Net-(U11-~{RST}(IO3))">
+    <net code="107" name="Net-(U11-~{RST}(IO3))">
       <node ref="U11" pin="7" pinfunction="~{RST}(IO3)" pintype="bidirectional"/>
       <node ref="U2" pin="51" pinfunction="QSPI_SD3" pintype="bidirectional"/>
     </net>
-    <net code="110" name="Net-(U11-~{WP}(IO2))">
+    <net code="108" name="Net-(U11-~{WP}(IO2))">
       <node ref="U11" pin="3" pinfunction="~{WP}(IO2)" pintype="bidirectional"/>
       <node ref="U2" pin="54" pinfunction="QSPI_SD2" pintype="bidirectional"/>
     </net>
-    <net code="111" name="Net-(U13-+)">
+    <net code="109" name="Net-(U13-+)">
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="1" pintype="output"/>
       <node ref="U13" pin="3" pinfunction="+" pintype="input"/>
     </net>
-    <net code="112" name="Net-(U14-IN)">
+    <net code="110" name="Net-(U14-IN)">
       <node ref="R92" pin="2" pintype="passive"/>
       <node ref="U14" pin="3" pinfunction="IN" pintype="input"/>
     </net>
-    <net code="113" name="Net-(U15A-+)">
+    <net code="111" name="Net-(U15A-+)">
       <node ref="R51" pin="2" pintype="passive"/>
       <node ref="U15" pin="3" pinfunction="+" pintype="input"/>
     </net>
-    <net code="114" name="Net-(U15A--)">
+    <net code="112" name="Net-(U15A--)">
       <node ref="R47" pin="1" pintype="passive"/>
       <node ref="U15" pin="2" pinfunction="-" pintype="input"/>
     </net>
-    <net code="115" name="Net-(U15B-+)">
+    <net code="113" name="Net-(U15B-+)">
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="R61" pin="2" pintype="passive"/>
       <node ref="R83" pin="1" pintype="passive"/>
       <node ref="U15" pin="5" pinfunction="+" pintype="input"/>
     </net>
-    <net code="116" name="Net-(U15B--)">
+    <net code="114" name="Net-(U15B--)">
       <node ref="C46" pin="1" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
       <node ref="R63" pin="1" pintype="passive"/>
       <node ref="U15" pin="6" pinfunction="-" pintype="input"/>
     </net>
-    <net code="117" name="Net-(U16-HO)">
+    <net code="115" name="Net-(U16-HO)">
       <node ref="R77" pin="1" pintype="passive"/>
       <node ref="U16" pin="5" pinfunction="HO" pintype="output"/>
     </net>
-    <net code="118" name="Net-(U16-IN)">
+    <net code="116" name="Net-(U16-IN)">
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="U16" pin="3" pinfunction="IN" pintype="input"/>
     </net>
-    <net code="119" name="Net-(U17A-+)">
+    <net code="117" name="Net-(U17A-+)">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="R64" pin="1" pintype="passive"/>
       <node ref="U17" pin="3" pinfunction="+" pintype="input"/>
     </net>
-    <net code="120" name="Net-(U17A--)">
+    <net code="118" name="Net-(U17A--)">
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="R67" pin="1" pintype="passive"/>
       <node ref="U17" pin="2" pinfunction="-" pintype="input"/>
     </net>
-    <net code="121" name="VBUS">
+    <net code="119" name="VBUS">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C12" pin="1" pintype="passive"/>
@@ -6725,79 +6633,72 @@
       <node ref="C25" pin="1" pintype="passive"/>
       <node ref="C36" pin="1" pintype="passive"/>
       <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="C50" pin="1" pintype="passive"/>
       <node ref="C51" pin="1" pintype="passive"/>
+      <node ref="C53" pin="1" pintype="passive"/>
       <node ref="C54" pin="1" pintype="passive"/>
+      <node ref="C55" pin="1" pintype="passive"/>
+      <node ref="C57" pin="1" pintype="passive"/>
+      <node ref="C59" pin="1" pintype="passive"/>
+      <node ref="C60" pin="1" pintype="passive"/>
       <node ref="C72" pin="1" pintype="passive"/>
       <node ref="C79" pin="1" pintype="passive"/>
-      <node ref="L3" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2" pintype="unspecified"/>
+      <node ref="J1" pin="4" pinfunction="4" pintype="unspecified"/>
       <node ref="Q4" pin="5" pinfunction="D" pintype="passive"/>
       <node ref="R70" pin="1" pintype="passive"/>
       <node ref="U9" pin="2" pinfunction="VIN" pintype="passive"/>
       <node ref="U9" pin="3" pinfunction="EN/UVLO" pintype="passive"/>
     </net>
-    <net code="122" name="VDC">
-      <node ref="C50" pin="1" pintype="passive"/>
-      <node ref="C53" pin="1" pintype="passive"/>
-      <node ref="C55" pin="1" pintype="passive"/>
-      <node ref="C57" pin="1" pintype="passive"/>
-      <node ref="C59" pin="1" pintype="passive"/>
-      <node ref="C60" pin="1" pintype="passive"/>
-      <node ref="J1" pin="2" pinfunction="2" pintype="unspecified"/>
-      <node ref="J1" pin="4" pinfunction="4" pintype="unspecified"/>
-      <node ref="L3" pin="1" pintype="passive"/>
-    </net>
-    <net code="123" name="unconnected-(J6-SBU1-PadA8)">
+    <net code="120" name="unconnected-(J6-SBU1-PadA8)">
       <node ref="J6" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="124" name="unconnected-(J6-SBU2-PadB8)">
+    <net code="121" name="unconnected-(J6-SBU2-PadB8)">
       <node ref="J6" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="125" name="unconnected-(U2-GPIO7-Pad9)">
+    <net code="122" name="unconnected-(U2-GPIO7-Pad9)">
       <node ref="U2" pin="9" pinfunction="GPIO7" pintype="bidirectional"/>
     </net>
-    <net code="126" name="unconnected-(U2-GPIO8-Pad11)">
+    <net code="123" name="unconnected-(U2-GPIO8-Pad11)">
       <node ref="U2" pin="11" pinfunction="GPIO8" pintype="bidirectional"/>
     </net>
-    <net code="127" name="unconnected-(U2-GPIO16-Pad27)">
+    <net code="124" name="unconnected-(U2-GPIO16-Pad27)">
       <node ref="U2" pin="27" pinfunction="GPIO16" pintype="bidirectional"/>
     </net>
-    <net code="128" name="unconnected-(U2-GPIO17-Pad28)">
+    <net code="125" name="unconnected-(U2-GPIO17-Pad28)">
       <node ref="U2" pin="28" pinfunction="GPIO17" pintype="bidirectional"/>
     </net>
-    <net code="129" name="unconnected-(U2-GPIO18-Pad29)">
+    <net code="126" name="unconnected-(U2-GPIO18-Pad29)">
       <node ref="U2" pin="29" pinfunction="GPIO18" pintype="bidirectional"/>
     </net>
-    <net code="130" name="unconnected-(U2-GPIO19-Pad30)">
+    <net code="127" name="unconnected-(U2-GPIO19-Pad30)">
       <node ref="U2" pin="30" pinfunction="GPIO19" pintype="bidirectional"/>
     </net>
-    <net code="131" name="unconnected-(U2-GPIO20-Pad31)">
+    <net code="128" name="unconnected-(U2-GPIO20-Pad31)">
       <node ref="U2" pin="31" pinfunction="GPIO20" pintype="bidirectional"/>
     </net>
-    <net code="132" name="unconnected-(U2-GPIO21-Pad32)">
+    <net code="129" name="unconnected-(U2-GPIO21-Pad32)">
       <node ref="U2" pin="32" pinfunction="GPIO21" pintype="bidirectional"/>
     </net>
-    <net code="133" name="unconnected-(U2-GPIO22-Pad34)">
+    <net code="130" name="unconnected-(U2-GPIO22-Pad34)">
       <node ref="U2" pin="34" pinfunction="GPIO22" pintype="bidirectional"/>
     </net>
-    <net code="134" name="unconnected-(U2-GPIO23-Pad35)">
+    <net code="131" name="unconnected-(U2-GPIO23-Pad35)">
       <node ref="U2" pin="35" pinfunction="GPIO23" pintype="bidirectional"/>
     </net>
-    <net code="135" name="unconnected-(U2-GPIO24-Pad36)">
+    <net code="132" name="unconnected-(U2-GPIO24-Pad36)">
       <node ref="U2" pin="36" pinfunction="GPIO24" pintype="bidirectional"/>
     </net>
-    <net code="136" name="unconnected-(U2-GPIO25-Pad37)">
+    <net code="133" name="unconnected-(U2-GPIO25-Pad37)">
       <node ref="U2" pin="37" pinfunction="GPIO25" pintype="bidirectional"/>
     </net>
-    <net code="137" name="unconnected-(U6-Pad1)">
+    <net code="134" name="unconnected-(U6-Pad1)">
       <node ref="U6" pin="1" pintype="output+no_connect"/>
     </net>
-    <net code="138" name="unconnected-(U8-NC-Pad5)">
-      <node ref="U8" pin="5" pinfunction="NC" pintype="output"/>
-    </net>
-    <net code="139" name="unconnected-(U9-PGOOD-Pad6)">
+    <net code="135" name="unconnected-(U9-PGOOD-Pad6)">
       <node ref="U9" pin="6" pinfunction="PGOOD" pintype="output+no_connect"/>
     </net>
-    <net code="140" name="unconnected-(U17-Pad7)">
+    <net code="136" name="unconnected-(U17-Pad7)">
       <node ref="U17" pin="7" pintype="output+no_connect"/>
     </net>
   </nets>
